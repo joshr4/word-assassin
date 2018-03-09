@@ -32,7 +32,7 @@ p{
 }
 
 body {
-  background-color: #455c6b;
+  background: linear-gradient(to bottom right,  #afbbc4,  #455c6b);
 }
 
 .rules{
