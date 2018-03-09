@@ -15,8 +15,26 @@
   </head>
 
   <body>
-
     <h1>Word Assassin</h1>
+    {% if showHome %}
+      <button class="create_btn">Create Game</button>
+      <button class="join_btn">Join Game</button>
+      <button class="rules_btn"><a href="/rules/">Rules</a></button>
+    {% endif %}
+
+    {% if showRules %}
+    <div class="rules">
+      <h2>General Gameplay</h2>
+      <p>Every assassin is assigned a unique word and a target. To kill their target, the assassin must get them to say the assigned word aloud</p>
+      <h2>Rules</h2>
+      <ol>
+        <li>Your target must say the word exactly as it appears, no variations tolerated</li>
+        <li>Each assassin must be directly responsible for getting their target to say the word. If your target says the word during conversation, it only counts if it was directly in response to a question you asked</li>
+        <li>Your target must say the word a loud. No writing, email or slack</li>
+        <li>Keep your target and word secret!!</li>
+      </ol>
+    </div>
+    {% endif%}
 
   </body>
 
