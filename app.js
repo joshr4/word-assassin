@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
-nunjucks.configure('views', {noCache: true});
+nunjucks.config;ure('views', {noCache: true});
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
